@@ -1,0 +1,12 @@
+addons:
+  postgresql: 9.6
+before_deploy:
+- rubocop
+- bundle exec rspec
+dist: trusty
+language: ruby
+rvm:
+- 2.5.1
+deploy:
+  api_key:
+    secure: mgDWJrGGO3XuvXpvsvskSS/BEMwL0ilKCJV01VYCpqHvYSNq/k8aIePHZ1tC2Z8W6G1w6SDTzE5l7A4KbH3BclmgviSXFoGKz4O/kAac7HlK/LPI5AC41206or0PvsTmzE9xglJvahJH6YA/Xg0bzgtHG1VNc4nz+iUK7OHiZLT7IFpskDrDAVokvUx6LqS0f78+bDQPAfMTLqps+9Wd/tlaE96tYEN1bboOqbTSH+HoNM+uu2pU2MqO626P1pqtTJCFafWu6ZoOy2oi4Bys4uxqCrfinp3avi3lW24hd99nBgz55z2JUfAUfv1fDA/YFwkn8ECtOxWcZt8lnt305xBLgM68ZTNLkpmdMl7HZwVsTz2KCb2XgSipZVEgX+m5H/7iriyGKg45hK/SfhJdcCNMnM0x3X94VOmgQGrmD0vq/ZX3jHOAY90Seshj77dBYehRI26RsUI5nMOoCLDkVJDND2ImJKSRM2dej+PCqlj1a/Bvmei9JYfRtRkeLN5ME/eJFQKSvloir8k+veKfNC6/2LPOg0tYSJpbEqAKDaJmWSGdOhot8LajJ5ocZyJ39vUnChugP+GluO4Vpc2PPhT5lfyFSmP++RS9hMKX8AG4a3ALVUSbrdqdAyCdUMaUDfsErCNmhBj3ZnO6rsiHT6V2/9PuUoPCIkJ0iNX0Srs=
